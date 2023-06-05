@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -36,3 +37,4 @@ Route::middleware([
 });
 
 Route::resource('products', ProductController::class);
+Route::resource('categories', CategoryController::class);
